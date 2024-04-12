@@ -71,14 +71,20 @@ class Tree {
         }
 
         let temp = node.right;
+        let parent = node;
 
-        while (!temp.left) {
+        while (temp.left) {
+          parent = temp;
           temp = temp.left;
         }
 
         node.value = temp.value;
 
-        node.right = removeNode(node.right, temp.value);
+        if (parent === node) {
+          parent.right = temp.right;
+        } else {
+          parent.left = temp.right;
+        }
       } else if (value < node.value) {
         node.left = removeNode(node.left, value);
         return node;
