@@ -90,14 +90,61 @@ class Tree {
     this.root = removeNode(this.root, value);
   }
 
+  inorderTrav() {
+    const result = [];
+    const travserse = (node) => {
+      if (!node) {
+        return;
+      }
+      travserse(node.left);
+      result.push(node.value);
+      travserse(node.right);
+    };
+    travserse(this.root);
+    console.log(result);
+  }
+
+  preOrder() {
+    const result = [];
+    const traverse = (node) => {
+      if (!node) {
+        return;
+      }
+      result.push(node.value);
+      traverse(node.left);
+      traverse(node.right);
+    };
+    traverse(this.root);
+    console.log(result);
+  }
+
+  postOrder() {
+    const result = [];
+    const traverse = (node) => {
+      if (!node) {
+        return;
+      }
+      traverse(node.left);
+      traverse(node.right);
+      result.push(node.value);
+    };
+    traverse(this.root);
+    console.log(result);
+  }
+
   printAll() {
     console.log(this.root);
   }
 }
 
 const newInstance = new Tree();
-newInstance.insertNode(10);
+newInstance.insertNode(7);
 newInstance.insertNode(4);
-newInstance.insertNode(11);
-console.log(newInstance.contains(10));
-newInstance.printAll();
+newInstance.insertNode(9);
+newInstance.insertNode(2);
+newInstance.insertNode(5);
+newInstance.insertNode(8);
+newInstance.insertNode(10);
+newInstance.inorderTrav();
+newInstance.preOrder();
+newInstance.postOrder();
