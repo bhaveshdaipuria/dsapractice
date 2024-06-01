@@ -80,7 +80,6 @@ class List {
     }
     if (prev) {
       prev.next = reservedPartHead;
-      console.log(prev);
     } else {
       this.head = reservedPartHead;
     }

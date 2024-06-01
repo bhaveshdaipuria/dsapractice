@@ -85,6 +85,7 @@ class Tree {
         } else {
           parent.left = temp.right;
         }
+        return node;
       } else if (value < node.value) {
         node.left = removeNode(node.left, value);
         return node;
@@ -144,13 +145,10 @@ class Tree {
 }
 
 const newInstance = new Tree();
-newInstance.insertNode(7);
-newInstance.insertNode(4);
-newInstance.insertNode(9);
-newInstance.insertNode(2);
-newInstance.insertNode(5);
-newInstance.insertNode(8);
-newInstance.insertNode(10);
-newInstance.inorderTrav();
-newInstance.preOrder();
-newInstance.postOrder();
+newInstance.insertNode(20);
+newInstance.insertNode(6);
+newInstance.insertNode(37);
+newInstance.insertNode(33);
+newInstance.insertNode(43);
+newInstance.remove(37);
+newInstance.printAll();
