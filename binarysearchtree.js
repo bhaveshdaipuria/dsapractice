@@ -139,6 +139,25 @@ class Tree {
     console.log(result);
   }
 
+  bfs() {
+    const queue = [];
+    const result = [];
+    if (this.root) {
+      queue.push(this.root);
+    }
+    while (queue.length > 0) {
+      const elem = queue.shift();
+      result.push(elem.value);
+      if (elem.left) {
+        queue.push(elem.left);
+      }
+      if (elem.right) {
+        queue.push(elem.right);
+      }
+    }
+    return result;
+  }
+
   printAll() {
     console.log(this.root);
   }
@@ -150,5 +169,6 @@ newInstance.insertNode(6);
 newInstance.insertNode(37);
 newInstance.insertNode(33);
 newInstance.insertNode(43);
-newInstance.remove(37);
-newInstance.printAll();
+console.log(newInstance.bfs());
+// newInstance.remove(37);
+// newInstance.printAll();
