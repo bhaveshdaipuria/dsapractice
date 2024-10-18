@@ -164,11 +164,14 @@ class Tree {
 }
 
 const newInstance = new Tree();
-newInstance.insertNode(20);
-newInstance.insertNode(6);
-newInstance.insertNode(37);
-newInstance.insertNode(33);
-newInstance.insertNode(43);
-console.log(newInstance.bfs());
+newInstance.insertNode(10);
+newInstance.insertNode(9);
+newInstance.insertNode(8);
+newInstance.insertNode(40);
+newInstance.insertNode(35);
+newInstance.insertNode(75);
+newInstance.insertNode(100);
+newInstance.insertNode(11);
+// console.log(newInstance.bfs());
 // newInstance.remove(37);
 // newInstance.printAll();
