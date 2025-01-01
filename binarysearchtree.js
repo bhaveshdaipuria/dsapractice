@@ -161,17 +161,4 @@ class Tree {
 	}
 }
 
-const treeInstance = new Tree();
-treeInstance.insertNode(90);
-treeInstance.insertNode(80);
-treeInstance.insertNode(75);
-treeInstance.insertNode(70);
-treeInstance.insertNode(60);
-treeInstance.insertNode(50);
-treeInstance.insertNode(150);
-treeInstance.insertNode(130);
-treeInstance.insertNode(200);
-treeInstance.remove(150)
-console.log(treeInstance.root)
-
 module.exports = { Tree, Node };
