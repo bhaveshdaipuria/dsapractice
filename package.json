@@ -1,0 +1,16 @@
+{
+  "name": "dsapractice",
+  "version": "1.0.0",
+  "scripts": {
+    "tests": "jest",
+    "test-sorting": "jest ./__tests__/sorting.test.js",
+    "test-bst": "jest ./__tests__/bst.test.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}

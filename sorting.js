@@ -1,5 +1,6 @@
 const array = [64, 25, 12, 22, 11];
 
+//Selection sort
 function selectionSort(arr) {
 	const n = arr.length;
 	for (let i = 0; i < n - 1; i++) {
@@ -15,11 +16,10 @@ function selectionSort(arr) {
 			arr[minIndex] = temp;
 		}
 	}
+	return arr;
 }
 
-// selectionSort(array);
-// console.log(array);
-
+// Bubble Sort
 function bubbleSort(arr) {
 	let n = array.length;
 
@@ -32,11 +32,10 @@ function bubbleSort(arr) {
 			}
 		}
 	}
+	return arr;
 }
 
-// bubbleSort(array);
-// console.log(array);
-
+// Insertion Sort
 function insertionSort(arr) {
 	for (let i = 0; i < arr.length; i++) {
 		let key = arr[i];
@@ -48,7 +47,7 @@ function insertionSort(arr) {
 		}
 		arr[j + 1] = key;
 	}
+	return arr;
 }
 
-insertionSort(array);
-console.log(array);
+module.exports = { selectionSort, bubbleSort, insertionSort };
