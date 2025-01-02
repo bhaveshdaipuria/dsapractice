@@ -4,7 +4,8 @@
   "scripts": {
     "tests": "jest",
     "test-sorting": "jest ./__tests__/sorting.test.js",
-    "test-bst": "jest ./__tests__/bst.test.js"
+    "test-bst": "jest ./__tests__/bst.test.js",
+    "test-fastsorting": "jest ./__tests__/fastsorting.test.js"
   },
   "keywords": [],
   "author": "",
