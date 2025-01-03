@@ -5,7 +5,8 @@
     "tests": "jest",
     "test-sorting": "jest ./__tests__/sorting.test.js",
     "test-bst": "jest ./__tests__/bst.test.js",
-    "test-fastsorting": "jest ./__tests__/fastsorting.test.js"
+    "test-fastsorting": "jest ./__tests__/fastsorting.test.js",
+    "test-singly_linked_list": "jest ./__tests__/singly_linked_list.test.js"
   },
   "keywords": [],
   "author": "",
