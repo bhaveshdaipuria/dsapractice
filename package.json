@@ -6,7 +6,9 @@
     "test-sorting": "jest ./__tests__/sorting.test.js",
     "test-bst": "jest ./__tests__/bst.test.js",
     "test-fastsorting": "jest ./__tests__/fastsorting.test.js",
-    "test-singly_linked_list": "jest ./__tests__/singly_linked_list.test.js"
+    "test-singly_linked_list": "jest ./__tests__/singly_linked_list.test.js",
+    "test-minheap": "jest ./__tests__/minheap.test.js",
+    "test-maxheap": "jest ./__tests__/maxheap.test.js"
   },
   "keywords": [],
   "author": "",
